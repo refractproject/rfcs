@@ -66,3 +66,7 @@ I still have trouble understanding what “category” means here, but that may 
 ## Provided Media Types
 
 Swagger supports a section that defines what formats the server will respond with. This should be added (already discussed with Z).
+
+## Add Schema to Resource
+
+Should resources be able to have their own schema (currently Asset with `messageBodySchema` as class).
