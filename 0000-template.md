@@ -1,4 +1,4 @@
-- Start Date: 2015-06-18
+- Start Date: (fill me in with today's date, YYYY-MM-DD)
 - RFC PR: (leave this empty)
 - Refract Issue: (leave this empty)
 
