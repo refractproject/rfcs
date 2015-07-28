@@ -17,12 +17,6 @@ The purpose of this document is to make it easier for newcomers to understand th
 We should combine the API Description namespace with the resource namespace.
 Right now they are separate and it would be clearer if they were not.
 
-## Elements in Attributes
-
-Refract allows for including elements within the attributes section of an element.
-Even though it’s possible, it may be helpful to avoid this in such an important namespace.
-Reason being, this will be one of the first places people interact with Refract, and to use complex features may be too much.
-
 ## HREF Variables
 
 We should call them “hrefVariables” everywhere instead of parameters in places (specifically transitions).
