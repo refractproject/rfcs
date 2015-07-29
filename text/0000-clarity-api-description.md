@@ -43,11 +43,6 @@ We need to clarify how inheritance works by defining the behavior for:
 We should be able to define transitions on the root of the document and not require they are nested within a resource.
 This type of transition, though, should have a URL and a method.
 
-## Subclass Asset
-
-We should subclass the Asset Element and add one called “messageShema” and another called “messageBody.”
-This will make reading a API Description make more sense than seeing Asset alone with classes.
-
 ## Provided Media Types
 
 We should add a section that defines what media types the server will respond with.
