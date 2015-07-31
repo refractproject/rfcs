@@ -1,6 +1,5 @@
 - Start Date: 2015-07-29
-- RFC PR: (leave this empty)
-- Refract Issue: (leave this empty)
+- RFC PR: https://github.com/refractproject/rfcs/pull/5
 
 # Summary
 
@@ -28,4 +27,3 @@ Currently, the MSON refract namespace references, and heavily depends on the
 MSON specification. It might be difficult to change this as it would require
 substancially changing the refract namespace. I propose we change the name, but
 we will reference the MSON specification.
-
