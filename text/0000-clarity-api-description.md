@@ -23,12 +23,6 @@ We should call them “hrefVariables” everywhere instead of parameters in plac
 I think this will be more consistent and easier to understand for newcomers.
 This will make more sense in how we handle inheritance as well, because parameters inheriting from hrefVariables does not seem optimal.
 
-## Defining Classes
-
-Swagger provides a way to define tags that can be applied to resources throughout the document.
-Refract has the “class” attribute that we can use the same way, we only need a way to define a class name and provide the description for it.
-Of course, this won’t carry over to API Blueprint, but that’s OK.
-
 ## Clarify Inheritance
 
 We need to clarify how inheritance works by defining the behavior for:
@@ -47,17 +41,7 @@ This type of transition, though, should have a URL and a method.
 
 We should add a section that defines what media types the server will respond with.
 
-## Add Schema to Resource
-
-A resource should be able to have its own schema, whereas now it cannot.
-
 # Unresolved questions
-
-## Category Element
-
-What is a "category"?
-Does this word make sense used here?
-Maybe something like “section” or from the HTML world “div”?
 
 ## Transition Attributes
 
