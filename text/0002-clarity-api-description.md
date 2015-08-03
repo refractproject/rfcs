@@ -1,6 +1,6 @@
 - Start Date: 2015-06-18
-- RFC PR: (leave this empty)
-- Refract Issue: (leave this empty)
+- RFC PR: https://github.com/refractproject/rfcs/pull/1
+- Refract Issue:
 
 # Summary
 
@@ -44,4 +44,3 @@ We should add a section that defines what media types the server will respond wi
 ## Transition Attributes
 
 We should rename transition attributes to "data" to prevent confusion because the term "attributes" is already used within Refract.
-

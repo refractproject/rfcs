@@ -14,7 +14,8 @@ consistent and controlled path for new features to enter the framework.
 
 ## Active RFC List
 
-None yet.
+- [0001 MSON Rename](text/0001-mson-rename.md)
+- [0002 Clarity on API Description Format](text/0002-clarity-api-description.md)
 
 ## When you need to follow this process
 
