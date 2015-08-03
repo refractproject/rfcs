@@ -41,10 +41,7 @@ This type of transition, though, should have a URL and a method.
 
 We should add a section that defines what media types the server will respond with.
 
-# Unresolved questions
-
 ## Transition Attributes
 
-I think it would be helpful to call this something other than attributes, as this will not be obvious to most people.
-We have parameters, variables, and attributes throughout the document, which seems confusing.
-What should this be called?
+We should rename transition attributes to "data" to prevent confusion because the term "attributes" is already used within Refract.
+
