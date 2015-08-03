@@ -41,10 +41,6 @@ This type of transition, though, should have a URL and a method.
 
 We should add a section that defines what media types the server will respond with.
 
-## Add Schema to Resource
-
-A resource should be able to have its own schema, whereas now it cannot.
-
 # Unresolved questions
 
 ## Category Element
