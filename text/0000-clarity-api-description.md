@@ -43,12 +43,6 @@ We should add a section that defines what media types the server will respond wi
 
 # Unresolved questions
 
-## Category Element
-
-What is a "category"?
-Does this word make sense used here?
-Maybe something like “section” or from the HTML world “div”?
-
 ## Transition Attributes
 
 I think it would be helpful to call this something other than attributes, as this will not be obvious to most people.
