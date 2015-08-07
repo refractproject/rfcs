@@ -16,6 +16,7 @@ consistent and controlled path for new features to enter the framework.
 
 - [0001 MSON Rename](text/0001-mson-rename.md)
 - [0002 Clarity on API Description Format](text/0002-clarity-api-description.md)
+- [0003 Rename `class` meta property](text/0003-class-rename.md)
 
 ## When you need to follow this process
 

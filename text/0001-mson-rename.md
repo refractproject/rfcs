@@ -1,5 +1,6 @@
 - Start Date: 2015-07-29
 - RFC PR: https://github.com/refractproject/rfcs/pull/5
+- Refract Issue: https://github.com/refractproject/refract-spec/pull/35
 
 # Summary
 
