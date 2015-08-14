@@ -1,6 +1,5 @@
 - Start Date: 2015-08-10
-- RFC PR: (leave this empty)
-- Refract Issue: (leave this empty)
+- RFC PR: https://github.com/refractproject/rfcs/pull/10
 
 # Summary
 Clarify API description namespace and iron out issues which rose during API Blueprint serialization to API description namespace.
