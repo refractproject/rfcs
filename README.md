@@ -14,6 +14,10 @@ consistent and controlled path for new features to enter the framework.
 
 ## Active RFC List
 
+- [0004 Clarity on API Description Namespace](text/0004-clarify-api-namespace.md)
+
+## Completed RFC List
+
 - [0001 MSON Rename](text/0001-mson-rename.md)
 - [0002 Clarity on API Description Format](text/0002-clarity-api-description.md)
 - [0003 Rename `class` meta property](text/0003-class-rename.md)
