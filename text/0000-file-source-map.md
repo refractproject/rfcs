@@ -17,7 +17,7 @@ This covers the situation where the final refract tree is created by parsing
 multiple API Blueprint files as described in
 [this issue](https://github.com/apiaryio/api-blueprint/issues/8).
 
-This RFC is SHOULD be considered before implementing the Parser Result namespace
+This RFC SHOULD be considered before implementing the Parser Result namespace
  as releasing it in its current form may lead into backward incompatible changes
 in the future.
 
@@ -32,6 +32,12 @@ normal ("unrefracted") form under the `sourceMap` property.
 This change alone will allow us to store any additional information about the
 source file in element's attributes.
 
+For clarity I suggest to add following:
+
+> The Source Map element SHOULD NOT be used it its normal ("unrefracted") form
+unless the particular application clearly implies what is the source file the
+source map is pointing in.
+
 I would suggest to leave the `content` of the `Source Map` element as is
 (array of tuples).
 
@@ -44,10 +50,10 @@ For example:
 	"element": "...",
 	"attributes": {
 		"sourceMap": {
-            "element": "sourceMap",
-            "attributes": {},
-            "content": [[4, 12], [20, 12]]
-        }
+			"element": "sourceMap",
+			"attributes": {},
+			"content": [[4, 12], [20, 12]]
+		}
 	}
 }
 ```
@@ -69,10 +75,10 @@ For example:
 {
 	"element": "...",
 	"attributes": {
-        "sourceFile": {
-            "contentType": "text/vnd.apiblueprint+markdown",
-            "href": "apiary.apib"
-        },
+		"sourceFile": {
+			"contentType": "text/vnd.apiblueprint+markdown",
+			"href": "apiary.apib"
+		},
 		"sourceMap": [
 			[4, 12],
 			[20, 12]
