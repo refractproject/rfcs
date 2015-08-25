@@ -47,14 +47,14 @@ For example:
 
 ```json
 {
-	"element": "...",
-	"attributes": {
-		"sourceMap": {
-			"element": "sourceMap",
-			"attributes": {},
-			"content": [[4, 12], [20, 12]]
-		}
-	}
+    "element": "...",
+    "attributes": {
+        "sourceMap": {
+            "element": "sourceMap",
+            "attributes": {},
+            "content": [[4, 12], [20, 12]]
+        }
+    }
 }
 ```
 
@@ -73,17 +73,17 @@ For example:
 
 ```json
 {
-	"element": "...",
-	"attributes": {
-		"sourceFile": {
-			"contentType": "text/vnd.apiblueprint+markdown",
-			"href": "apiary.apib"
-		},
-		"sourceMap": [
-			[4, 12],
-			[20, 12]
-		]
-	}
+    "element": "...",
+    "attributes": {
+        "sourceFile": {
+            "contentType": "text/vnd.apiblueprint+markdown",
+            "href": "apiary.apib"
+        },
+        "sourceMap": [
+            [4, 12],
+            [20, 12]
+        ]
+    }
 }
 ```
 
