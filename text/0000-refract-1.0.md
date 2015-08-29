@@ -23,7 +23,7 @@ With this in mind, I'd like to start now thinking through the steps on how to pr
 
 In addition to moving to 1.0.0, we need to actually start versioning namespace documents. The reason for this is that we do not want a breaking change in a namespace to require a major version bump for the entire spec.
 
-**Proposal**: Start versioning current and future namespaces. We can do this immediately.
+**Proposal**: Start versioning current and future namespaces and move each namespace to their own repo. We can do this immediately.
 
 ## Namespace Functionality
 
