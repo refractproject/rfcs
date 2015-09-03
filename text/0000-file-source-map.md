@@ -32,6 +32,12 @@ normal ("unrefracted") form under the `sourceMap` property.
 This change alone will allow us to store any additional information about the
 source file in element's attributes.
 
+Instead, we should add:
+
+> Every refract element MAY include an `sourceMap` attribute. Its content SHOULD
+be an array of `Source Map` elements. The Source Map elements represent the
+location(s) in source file(s) from which the element was composed.
+
 For clarity I suggest to add following:
 
 > The Source Map element SHOULD NOT be used it its normal ("unrefracted") form
@@ -49,11 +55,13 @@ For example:
 {
     "element": "...",
     "attributes": {
-        "sourceMap": {
-            "element": "sourceMap",
-            "attributes": {},
-            "content": [[4, 12], [20, 12]]
-        }
+        "sourceMap": [
+            {
+                "element": "sourceMap",
+                "attributes": {},
+                "content": [[4, 12], [20, 12]]
+            }
+        ]
     }
 }
 ```
