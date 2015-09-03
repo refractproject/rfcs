@@ -18,7 +18,7 @@ This document outlines a new serialization format for embedding Refract.
 
 For this serialization, there are two basic concepts:
 
-1. There is a reserved property name of `refract`
+1. There is a reserved property name of `_refract`
 1. There is a Refract Object with properties:
     - element
     - meta
@@ -46,7 +46,7 @@ In Refract, this is an object with four members. With Embedded Refract, I can an
 
 ```json
 {
-  "refract": {
+  "_refract": {
     "element": "object",
     "meta": {
       "id": "bowler-103"
@@ -146,10 +146,10 @@ If values do not have any meta values or attributes, there is no need to represe
   "first_name": "John",
   "last_name": "Doe",
   "age": {
-    "refract": {
+    "_refract": {
       "element": "number",
       "meta": {
-        "id": "bowner-103-age"
+        "id": "bowler-103-age"
       },
       "content": 28
     }
@@ -162,7 +162,7 @@ Above, I've added an ID to the age of the bowler. Notice how I just refracted th
 
 ```json
 {
-  "refract": {
+  "_refract": {
     "element": "object",
     "meta": {
       "id": "bowler-103"
@@ -171,7 +171,7 @@ Above, I've added an ID to the age of the bowler. Notice how I just refracted th
       "age": {
         "element": "number",
         "meta": {
-          "id": "bowner-103-age"
+          "id": "bowler-103-age"
         },
         "content": 28
       }
@@ -187,7 +187,7 @@ This will also support full member elements, so even this below is equivalent (n
 
 ```json
 {
-  "refract": {
+  "_refract": {
     "element": "object",
     "meta": {
       "id": "bowler-103"
@@ -198,10 +198,10 @@ This will also support full member elements, so even this below is equivalent (n
         "content": {
           "key": "age",
           "value": {
-            "refract": {
+            "_refract": {
               "element": "number",
               "meta": {
-                "id": "bowner-103-age"
+                "id": "bowler-103-age"
               },
               "content": 28
             }
@@ -229,7 +229,7 @@ Array items can be embedded without refracting the entire array.
   "age": 28,
   "scores": [
     {
-      "refract": {
+      "_refract": {
         "element": "number",
         "meta": {
           "id": "bowler-103-game-1"
@@ -250,7 +250,7 @@ Full arrays can also be refracted.
   "last_name": "Doe",
   "age": 28,
   "scores": {
-    "refract": {
+    "_refract": {
       "element": "array",
       "meta": {
         "id": "bowler-103-scores"
@@ -267,7 +267,7 @@ This makes it nice for refracting attributes, because now you know what attribut
 
 ```json
 {
-  "refract": {
+  "_refract": {
     "element": "object",
     "meta": {
       "id": "bowler-103"
@@ -285,14 +285,14 @@ This makes it nice for refracting attributes, because now you know what attribut
 
 ```json
 {
-  "refract": {
+  "_refract": {
     "element": "object",
     "meta": {
       "id": "bowler-103"
     },
     "attributes": {
       "foo": {
-        "refract": {
+        "_refract": {
           "element": "string",
           "content": "baz"
         }
@@ -317,7 +317,7 @@ What would this mean, where we have the `foo` property?
   "first_name": "John",
   "last_name": "Doe",
   "age": {
-    "refract": {
+    "_refract": {
       "element": "number",
       "content": 28
     },
@@ -327,26 +327,7 @@ What would this mean, where we have the `foo` property?
 }
 ```
 
-I would suggest it be treated as an attribute. This would be the same as:
-
-```json
-{
-  "first_name": "John",
-  "last_name": "Doe",
-  "age": {
-    "refract": {
-      "element": "number",
-      "attributes": {
-        "foo": "bar"
-      },
-      "content": 28
-    }
-  },
-  "scores": [150, 202, 145]
-}
-```
-
-Note: this scenario is different for objects, though, because those would be treated as actual properties.
+We SHOULD ignore these properties.
 
 # Drawbacks
 
