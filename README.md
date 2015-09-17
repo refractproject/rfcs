@@ -15,6 +15,8 @@ consistent and controlled path for new features to enter the framework.
 ## Active RFC List
 
 - [0004 Clarity on API Description Namespace](text/0004-clarify-api-namespace.md)
+- [0005 Embedded Refract](text/0005-embedded-refract.md)
+- [0006 File Source Map](text/0006-file-source-map.md)
 
 ## Completed RFC List
 
