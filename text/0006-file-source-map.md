@@ -1,5 +1,5 @@
 - Start Date: 2015-08-24
-- RFC PR: (leave this empty)
+- RFC PR: https://github.com/refractproject/rfcs/pull/12
 - Refract Issue: (leave this empty)
 
 # Summary
