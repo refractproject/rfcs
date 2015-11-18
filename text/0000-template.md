@@ -24,6 +24,8 @@ In each case, the format used MUST be added as a suffix. For example, when excha
 application/vnd.refract.parse-result+json
 ```
 
+All suffixes MUST conform to the [structured syntax registry](http://www.iana.org/assignments/media-type-structured-suffix/media-type-structured-suffix.xhtml). YAML formats MUST use `+yaml`.
+
 The full refract version MUST be used with all representations prefixed with `application/vnd.refract`.
 
 Additionally, we SHOULD register all media types we use with the [IANA media type registry](http://www.iana.org/assignments/media-types/media-types.xhtml).
