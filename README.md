@@ -16,6 +16,7 @@ consistent and controlled path for new features to enter the framework.
 
 - [0005 Embedded Refract](text/0005-embedded-refract.md)
 - [0006 File Source Map](text/0006-file-source-map.md)
+- [0007 Namespace Media Types](text/0007-namespace-media-types.md)
 
 ## Completed RFC List
 
