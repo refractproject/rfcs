@@ -15,8 +15,8 @@ data to let the user know where data came from and which information was added
 that did not exist in the original representation.
 
 The idea with proposing meta links would be to provide a generic way to link to
-out-of-band information to allow the user to explore more information in a
-given context.
+normally out-of-band information to allow the user to explore more information in a
+given context. Links can tie this information directly to specific elements.
 
 # Detailed design
 
@@ -38,6 +38,10 @@ relation](http://www.iana.org/assignments/link-relations/link-relations.xhtml)
 or a resolvable URL to documentation on the link relation.
 
 ## Parse Result Link Relations
+
+In addition to the link relations below, we cause the `help` link relation for
+annotations, linking to documentation about why a specific annotation would pop
+up.
 
 ### `inferred`
 
