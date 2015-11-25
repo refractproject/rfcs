@@ -80,4 +80,5 @@ The alternative would be creating more namespaces, media types, and namespace-sp
 # Unresolved questions
 
 * Whether to do this or continue creating namespaces
+* Whether to remove namespacing from the current spec
 * Whether to include the ability to embed links
