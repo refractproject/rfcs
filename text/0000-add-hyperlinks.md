@@ -19,7 +19,7 @@ This proposal is for adding a `links` property to the `meta` object in Refract e
         - `rel` - Link relation of the link
         - `href` - Resolvable URL for the link
 
-The `rel` property MAY be any defined [link relation](http://www.iana.org/assignments/link-relations/link-relations.xhtml), a resolvable URL to documentation on the link relation, or defined in a `profile` link.
+The `rel` property SHOULD conform to [RFC 5988](https://tools.ietf.org/html/rfc5988). Link relations should be as registered or extension link relations, and MAY be defined in profile documents.
 
 ## Use Cases
 
@@ -57,7 +57,17 @@ In some situations, it may be advantageous to embed the resources themselves tha
 
 ## Additional Benefits
 
-Additionally, if hyperlinks are used in this way, we may be able to remove the concept of namespaces from the base Refract specification. The namespace options allowed for including additional elements, but so far no library is using or has implemented this functionality. Since we've been using content types for extending Refract documents, we could use the `profile` link relation to define additional functionality.
+Additionally, if hyperlinks are used in this way, we may be able to remove the concept of namespaces from the base Refract specification. The namespace properties allowed for programmatically including additional elements, but so far no library is using or has implemented this functionality. Since we've been using content types for extending Refract documents, we could use the `profile` link relation to define additional functionality and link relations.
+
+If we go this route, we can make the following changes to the base Refract specification.
+
+- Remove `prefix` and `namespace` from the `meta` object
+- Simplify the `ref` property in the `meta` object to just be a URI string
+- Remove the need for the current [Link](https://github.com/refractproject/refract-spec/blob/master/refract-spec.md#link-enum)
+- Simplify the [Ref Element](https://github.com/refractproject/refract-spec/blob/master/refract-spec.md#ref-element-element) to just have a URI as its content, which is just a string
+- Remove the [Namespacing](https://github.com/refractproject/refract-spec/blob/master/refract-spec.md#ref-element-element) section
+
+This is quite the simplification of the specification, both in length and complexity.
 
 # Drawbacks
 
