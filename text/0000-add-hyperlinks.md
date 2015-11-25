@@ -12,14 +12,12 @@ As we encounter more real-world Refract situations, we are noticing that we seem
 
 # Design
 
-This proposal is for adding a `links` property to the `meta` object in Refract elements.
+This proposal is for adding a Link Element to the base spec.
 
-- `links` (array)
-    - (object)
-        - `rel` - Link relation of the link
-        - `href` - Resolvable URL for the link
-
-The `rel` property SHOULD conform to [RFC 5988](https://tools.ietf.org/html/rfc5988). Link relations should be as registered or extension link relations, and MAY be defined in profile documents.
+- `element`: link (string, fixed)
+- `attributes`
+    - `relation` (string) - Link relation type as specified in [RFC 5988][].
+    - `href` (string) - The URI for the given link
 
 ## Use Cases
 
@@ -39,12 +37,18 @@ This example shows a `foo` element with two links. The presence of the `edit` li
   meta: {
     links: [
       {
-        rel: 'edit',
-        href: '/bar/1'
+        element: 'link',
+        attributes: {
+          relation: 'edit',
+          href: '/bar/1'
+        }
       },
       {
-        rel: 'self',
-        href: '/bar/1'
+        element: 'link',
+        attributes: {
+          relation: 'self',
+          href: '/bar/1'
+        }
       }
     ]
   }
@@ -53,21 +57,15 @@ This example shows a `foo` element with two links. The presence of the `edit` li
 
 ## Embeddeding Links
 
-In some situations, it may be advantageous to embed the resources themselves that would be found when the link was resolved. This current proposal is not addressing this yet, though it may be something we should look into in this RFC. This would happen if the design would go better together.
+While not addressed in this PR, embedding links may be possible by including the [Asset Element](https://github.com/refractproject/refract-spec/blob/master/namespaces/api-description-namespace.md#asset-element) in the base specification and making it available as content for this Link Element.
 
 ## Additional Benefits
 
-Additionally, if hyperlinks are used in this way, we may be able to remove the concept of namespaces from the base Refract specification. The namespace properties allowed for programmatically including additional elements, but so far no library is using or has implemented this functionality. Since we've been using content types for extending Refract documents, we could use the `profile` link relation to define additional functionality and link relations.
+Additionally, if hyperlinks are used in this way, we may be able to remove the concept of namespaces from the base Refract specification. This change is out of scope of this RFC, but mentioning so we keep it in mind.
 
-If we go this route, we can make the following changes to the base Refract specification.
+## Transition in the API Description Namespace
 
-- Remove `prefix` and `namespace` from the `meta` object
-- Simplify the `ref` property in the `meta` object to just be a URI string
-- Remove the need for the current [Link](https://github.com/refractproject/refract-spec/blob/master/refract-spec.md#link-enum)
-- Simplify the [Ref Element](https://github.com/refractproject/refract-spec/blob/master/refract-spec.md#ref-element-element) to just have a URI as its content, which is just a string
-- Remove the [Namespacing](https://github.com/refractproject/refract-spec/blob/master/refract-spec.md#ref-element-element) section
-
-This is quite the simplification of the specification, both in length and complexity.
+If we do this, the [Transition element](https://github.com/refractproject/refract-spec/blob/master/namespaces/api-description-namespace.md#transition-element) in the API Description will inherit from this element.
 
 # Drawbacks
 
@@ -80,5 +78,3 @@ The alternative would be creating more namespaces, media types, and namespace-sp
 # Unresolved questions
 
 * Whether to do this or continue creating namespaces
-* Whether to remove namespacing from the current spec
-* Whether to include the ability to embed links
