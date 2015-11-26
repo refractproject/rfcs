@@ -18,6 +18,7 @@ consistent and controlled path for new features to enter the framework.
 - [0006 File Source Map](text/0006-file-source-map.md)
 - [0007 Namespace Media Types](text/0007-namespace-media-types.md)
 - [0008 Add Hyperlinks](text/0008-add-hyperlinks.md)
+- [0009 Parse Result Link Relations](text/0009-parse-result-link-relations.md)
 
 ## Completed RFC List
 
