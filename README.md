@@ -15,8 +15,7 @@ consistent and controlled path for new features to enter the framework.
 ## Active RFC List
 
 - [0005 Embedded Refract](text/0005-embedded-refract.md)
-- [0006 File Source Map](text/0006-file-source-map.md)
-- [0010 HREF Variables for HTTP Requests](text/0010-httprequest-href-variables.md)
+- [0011 Remove Namespacing in Base Specification](text/0011-remove-namespacing.md)
 
 ## Completed RFC List
 
@@ -24,9 +23,11 @@ consistent and controlled path for new features to enter the framework.
 - [0002 Clarity on API Description Format](text/0002-clarity-api-description.md)
 - [0003 Rename `class` meta property](text/0003-class-rename.md)
 - [0004 Clarity on API Description Namespace](text/0004-clarify-api-namespace.md)
+- [0006 File Source Map](text/0006-file-source-map.md)
 - [0007 Namespace Media Types](text/0007-namespace-media-types.md)
 - [0008 Add Hyperlinks](text/0008-add-hyperlinks.md)
 - [0009 Parse Result Link Relations](text/0009-parse-result-link-relations.md)
+- [0010 HREF Variables for HTTP Requests](text/0010-httprequest-href-variables.md)
 
 ## When you need to follow this process
 
