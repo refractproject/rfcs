@@ -19,7 +19,7 @@ Note: we are already doing this in Minim.
 # Design
 
 This RFC proposes to reserve `element` in the entire tree. This means that
-anywhere the `element` keyword is found, a parser SHOULD treat the object as a
+anywhere the `element` key is found, a parser SHOULD treat the object as a
 Refract Object.
 
 ## Secondary Proposal
@@ -31,7 +31,8 @@ not need to refracted if it is a string.
 
 We can then follow this proposed rule when serializing: if an element is a
 primitive element and has no attributes or meta data, the element MAY be left
-as a primitive value.
+as a primitive value. This rule SHOULD go into the RFC where we define
+[serialization rules](https://github.com/refractproject/rfcs/pull/17).
 
 # Drawbacks
 
