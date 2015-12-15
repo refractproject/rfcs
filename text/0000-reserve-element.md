@@ -19,7 +19,7 @@ Note: we are already doing this in Minim.
 # Design
 
 This RFC proposes to reserve `element` in the entire tree. This means that
-anywhere the `element` key is found, a parser SHOULD treat the object as a
+anywhere the property `element` is found, a parser SHOULD treat the object as a
 Refract Object.
 
 ## Secondary Proposal
@@ -36,7 +36,7 @@ as a primitive value. This rule SHOULD go into the RFC where we define
 
 # Drawbacks
 
-This means that no user can ever use the keyword `element`. We could provide
+This means that no user can ever use the property `element`. We could provide
 ways to get around this with some identifier, like `_isRefract: false`, but this
 just makes it more confusing.
 
