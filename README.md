@@ -16,6 +16,7 @@ consistent and controlled path for new features to enter the framework.
 
 - [0005 Embedded Refract](text/0005-embedded-refract.md)
 - [0011 Remove Namespacing in Base Specification](text/0011-remove-namespacing.md)
+- [0012 Reserve Element](text/0012-reserve-element.md)
 
 ## Completed RFC List
 
