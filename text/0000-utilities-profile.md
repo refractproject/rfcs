@@ -7,14 +7,10 @@
 This proposes we move `extend`, `select`, and `option` from the base
 specification to its own profile.
 
-Note that I'm calling this a "profile" versus a "namespace." This is pending
-this [RFC](https://github.com/refractproject/rfcs/pull/30). If we do not go the
-route proposed there, we can refer to this as a Utility Namespace.
-
 # Motivation
 
 The main motivation is to make the base specification as simple as possible. In
-ever implementation we've created for consuming Refract, such as from the Parse
+every implementation we've created for consuming Refract, such as from the Parse
 Result or API Description results, we have not needed to use any of these
 elements.
 
