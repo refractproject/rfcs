@@ -23,7 +23,7 @@ With this in mind, I'd like to start now thinking through the steps on how to pr
 
 In addition to moving to 1.0.0, we need to actually start versioning namespace documents. The reason for this is that we do not want a breaking change in a namespace to require a major version bump for the entire spec.
 
-**Proposal**: Start versioning current and future namespaces and move each namespace to their own repo. We can do this immediately.
+**Proposal**: Move all current namespaces to API Elements project.
 
 ## [Resolved] Namespace Functionality
 
@@ -41,7 +41,13 @@ An important concept of Refract is that it is a model for representing data stru
 
 This decoupling I think is important, because it gives freedom to implementors to implement the best way they see fit in their language/platform, and it allows for other serialization formats to spring up that may be helpful to others.
 
-**Proposal**: Explain the difference in the conceptual model and the serialization formats, and potentially move these serialization descriptions to their own file in the spec repo, separating them from the main spec.
+**Proposal**: Explain the difference in the conceptual model and the serialization formats, and create serialization guidelines for full Refract.
+
+## Inheritance
+
+Inheritance can be handled differently depending on the context in which the element is found. This shows up in how we handle inheritance within the data structure elements (now in API Elements).
+
+**Proposal**: Explain inheritance in some way, either in the base specification or through some type of guidelines document.
 
 # Drawbacks
 
