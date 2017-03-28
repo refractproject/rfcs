@@ -1,5 +1,5 @@
 - Start Date: 2017-03-28
-- RFC PR: (leave this empty)
+- RFC PR: https://github.com/refractproject/rfcs/pull/38
 - Refract Issue: (leave this empty)
 
 # Element Pointer
