@@ -18,6 +18,7 @@ consistent and controlled path for new features to enter the framework.
 - [0011 Remove Namespacing in Base Specification](text/0011-remove-namespacing.md)
 - [0012 Reserve Element](text/0012-reserve-element.md)
 - [0013 Element Pointer](text/0013-element-pointer.md)
+- [0014 Meta/Attributes Value Type](text/0014-meta-attributes-type.md)
 
 ## Completed RFC List
 
